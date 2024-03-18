@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Martian+Mono:wght@100..800&family=Tilt+Warp&display=swap');
+h1, h2, h3 {
+font-family: 'Tilt Warp', sans-serif;
+}
+a {
+font-family: "Tilt Warp", sans-serif;
+}
+p{
+font-family: "Gemunu Libre", sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #ffffff, #000000);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333; 
+}
+
+.tabla-indx{
+    border: 0px; 
+    text-align:center;
+}
+   
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* barra de navegacion */
+
+.nav-barra {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px;
+    background: linear-gradient(to right, #f2f2f2, #333333);
+    height: 50px; 
+}
+
+.nav-barra .links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1; 
+}
+
+.nav-barra a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.nav-barra img {
+    margin-right: 10px;
+}
+
+.volotea-texto {
+    background: linear-gradient(to right, #000000, #e20404);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.links a:hover {
+    color: rgb(165, 4, 4);
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+
+/* footer */
+.footer {
+    background: linear-gradient(to right, #333333, #000000);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.condiciones-enlace {
+    color: #fff; 
+    text-decoration: none;
+}
+/* Idx boton mapa  */
+.boton-mapa {
+    background-color: #eb1212;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.842);
+}
+
+.boton-mapa:hover {
+    background-color: #b3b3b3;
+}
+
+/* Idx Imagenes de */
+.contenedor-centrado, .centrado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contenedor-centrado {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+}
+
+.imagenes .imagen {
+    width: 700px; 
+    height: auto; 
+    margin: 0 40px; 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imagenes .imagen:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+/* Idx Tabla */
+.contenedor-tabla {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+.tabla-indx {
+    border-collapse: collapse;
+    width: 600px; 
+}
+
+.celda {
+    padding: 10px;
+    border: none;
+    width: 33.33%; 
+    height: 100px; 
+    text-align: center;
+    vertical-align: middle; 
+}
+
+.celda a {
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+    width: 100%; 
+    height: 100%; 
+}
+
+.contenido-celda {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.contenido-celda p {
+    margin: 0;
+}
+
+.celda a:hover {
+    color: rgb(165, 4, 4);
+}
+
+
+/* Página de check-in online */
+
+.check-in {
+    margin: 50px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.check-in h1 {
+    font-size: 36px;
+    color: #000000;
+}
+
+.check-in h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.check-in h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.check-in p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.check-in .imagen {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* check-in FORMULARIO */
+
+.check-in-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.check-in-form label {
+    margin-bottom: 5px;
+    font-family: "Gemunu Libre", sans-serif;
+}
+
+.check-in-form input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.check-in-form button {
+    padding: 10px 20px;
+    background-color: #e20404;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.check-in-form button:hover {
+    background-color: #b30000;
+}
+
+/* Página de Destinos */
+
+.destinos-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+.destinos-container p{
+color: #fff;}
+
+.destinos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.destino {
+    text-align: center;
+    border-radius: 15px;
+    background-color: #c0bfbf;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(134, 2, 2, 0.466);
+}
+
+.destino img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.destino h2 {
+    margin-top: 0;
+}
+
+.destino:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 0 20px rgba(221, 3, 3, 0.582); 
+}
+
+
+/* Pagina DUDAS */
+
+.contenido {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+.contenido h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+}
+
+.contenido p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.preguntas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pregunta {
+    background-color: #b6b6b6;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(214, 165, 3, 0.425);
+}
+
+.pregunta a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.respuesta li {
+color: #ffffff;
+}
+
+.pregunta a:hover {
+    color: #e20404;
+}
+
+.boton-volver {
+    background-color: #535353;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(214, 165, 3, 0.425);
+}
+
+.boton-volver:hover {
+    background-color: #b3b3b3;
+}
+
+.contenedor-boton {
+    text-align: center;
+}
+
+.respuesta {
+    scroll-margin-top: 170px;
+}
+
+/* Pagina Contacto */
+
+.red-social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; 
+}
+
+.red-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px; 
+    height: 150px; 
+    margin: 20px; 
+    padding: 20px; 
+    text-align: center;
+    background-color: #d4d4d4;
+    border-radius: 15px; 
+    box-shadow: 0 4px 6px rgba(196, 1, 1, 0.3); 
+    cursor: pointer; 
+    transition: box-shadow 0.3s; 
+}
+.red-social:hover {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+
+.red-social img {
+    width: 60px; 
+    height: 60px; 
+}
+
+section h1 {
+    text-align: center;
+}
+
+.red-social a {
+    color: rgb(0, 0, 0); 
+    text-decoration: none;
+}
+
+.via-telefonica {
+    text-align: center; 
+}
+
+.telefono {
+    margin: 0 auto; 
+    max-width: 600px; 
+    padding: 20px; 
+}
+
+.telefono p {
+    color: #ffffff;
+}
+
+.telefono h3 {
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.video,.mapa {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Pagina SOBRE NOSOTROS */
+
+.seccion-bienvenida,
+.seccion-aviones,
+.seccion-musica,
+.seccion-fundadores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+
+.seccion-bienvenida p,
+.seccion-aviones p,
+.seccion-musica p,
+.seccion-fundadores p{
+ color: #ffffff;
+}
+
+.seccion-bienvenida h1,
+.seccion-aviones h1,
+.seccion-musica h1,
+.seccion-fundadores h1{
+ font-size: 35px;
+}
+
+.iframe-contenedor {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+}
+
+.iframe-contenedor iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Pagina CONDICIONES DE USO */
+
+.seccion-condiciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+
+.seccion-condiciones h1{
+ font-size: 35px;
+ color: #000000;
+}
+
+.seccion-condiciones p{
+    color: #ffffff;
+   }
+
+
+   /* Pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        padding: 10px;
+    }
+
+    .imagenes .imagen {
+        width: 40%;
+        margin: 0 10px;
+    }
+}
+
+/* Pantallas medianas */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .wrapper {
+        padding: 13px;
+    }
+    .imagenes .imagen {
+        width: 40%;
+        margin: 0 10px;
+    }
+}
+
+/* Pantallas grandes */
+@media screen and (min-width: 1025px) {
+    .wrapper {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-barra a {
+        font-size: 12px; /* Reducir el tamaño de la letra en pantallas pequeñas */
+    }
+}
+
+
+/* Barra de desplazamiento */
+
+::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="favicon.png"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Volotea - Check-in Online</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="checkin.js"></script>
+</head>
+<body> 
+    <nav id="navbar" class="nav-barra">    
+        <a href="index.html"><img src="logo.png" width="50" height="50" alt="Logo de Volotea"></a><a href="index.html"><span class="volotea-texto">VOLOTEA</span></a>
+        <div class="links">
+            <a href="index.html">◆ INICIO</a>
+            <a href="check-in.html">◆ CHECK-IN</a>
+            <a href="destinos.html">◆ DESTINOS</a>
+            <a href="dudas.html">◆ ¿DUDAS?</a>
+            <a href="contacto.html">◆ CONTACTO</a>
+            <a href="sobre-volotea.html">◆ SOBRE VOLOTEA</a>
+        </div>
+    </nav>  
+
+    <div class="check-in">
+        <h1>CHECK-IN ONLINE</h1>
+        <form action="#" method="post" class="check-in-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="confirmation">Número de Confirmación:</label>
+            <input type="text" id="confirmation" name="confirmation" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="qr-container" style="display: none;">
+            <canvas id="qr-code"></canvas>
+        </div>
+        <h2>AHORRE TIEMPO Y DINERO</h2>
+        <img src="IMG/online-check-in-getty_images_ng_image_full-3321459312.jpeg" alt="Imagen de un teclado" class="imagen">
+        <h3>INSTRUCCIONES</h3>
+        <p>
+            El check-in online es el proceso mediante el que puede facturar en el vuelo a los pasajeros de su reserva y obtener su tarjeta de embarque, de forma ágil y fácil.
+            La tarjeta de embarque es el documento que le permite, junto a su identificación personal, acceder a la puerta de embarque de su vuelo.
+            Obtener e imprimir la tarjeta de embarque antes de su llegada al aeropuerto le ahorrará tiempo y dinero. Si lleva consigo solamente equipaje de mano, podrá dirigirse directamente al control de seguridad para llegar a la puerta de embarque de su vuelo. Si, por el contrario, tiene equipaje que factura, el trámite en el mostrador de facturación será más ágil.
+            Puede realizar el proceso de check-in online de forma gratuita entre 7 días y hasta 2 horas antes de la salida del vuelo.
+            Además, es importante que tenga en cuenta que el coste por realizar la facturación de su vuelo en el aeropuerto es de 15 € (IVA incluido), sin embargo puede realizar el check-in online a través de Internet sin coste alguno.
+            Para obtener la tarjeta de embarque, por favor introduzca el e-mail de contacto que utilizó al realizar la reserva y el número de confirmación de la misma.
+        </p>
+    </div>
+    <script src="barra-nav.js"></script>
+    <footer class="footer">
+        <pre>© 2024 Volotea S.L.   <a href="condiciones-de-uso.html" class="condiciones-enlace">◆ Condiciones de Uso</a> </pre> 
+    </footer>
+</body>
+</html>
+
